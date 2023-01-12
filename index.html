@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!--1st page-->
+    <div class="pagee">
+        <div class="header">
+            <img class="logo" src="logo.png" alt="Logo">
+            <div class="gugu_address">
+                Gugu Corporation (Pty)Ltd <br>
+                3 Millar Road, <br>
+                3rd floor <br>
+                Windermere, Berea <br>
+                Durban 4000<br>
+            </div>
+        </div>
+        <div class="agreement">
+            <h1>Service Level Agreement</h1>
+            <div class="box">
+                <p>
+                    BETWEEN <br><br> <b> Gugu Corporation (PTY) LTD</b><br>
+                    Reg No: 2019/106448/07 <br>
+                    (hereinafter referred to as the “Service Provider”) <br>
+                </p>
+                <p>
+                    And<br><br>
+                    <label for="client-name"> Client Name: </label>
+                    <input type="text" id="client-name" name="client-name"><br>
+
+                    <label for="client-id"> ID / Reg No.: </label>
+                    <input type="text" id="client-id" name="client-id">
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <img class="logo-in" src="logo.png" alt="Logo">
+            <div class="initial">
+                <label for="initial">Initial:</label>
+                <input type="text" id="initial">
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!--2nd Page-->
+
+    <div class="pagee">
+        <h3>Service Agreement Schedule</h3>
+        <label for="date" class="date">Date:</label>
+        <input type="date" id="date" name="date">
+
+        <label for="in-date" class="in-date">Installation Date:</label>
+        <input type="date" id="in-date" name="in-date"><br>
+
+        <label for="client" class="client">Client:</label>
+        <input type="client" id="client" name="client"> <br>
+
+        <label class="exist"><input type="checkbox" name="exist_contract" value="Existing Contract"> Existing Contract
+        </label>
+        <label class="new"><input type="checkbox" name="new_contract" value="New Contract"> New Contract
+        </label><br><br>
+
+
+        <table class="adresses_table">
+            <tr>
+                <th>Physical Address of Installation</th>
+                <th>Postal Address</th>
+            </tr>
+
+            <tr>
+                <td>Address:
+                    <input type="text" id="address">
+                </td>
+                <td>Address:
+                    <input type="text" id="address">
+                </td>
+            </tr>
+
+            <tr>
+                <td> <input type="text" id="address"></td>
+                <td> <input type="text" id="address"></td>
+            </tr>
+
+            <tr>
+                <td>City:
+                    <input type="text" id="city">
+                </td>
+                <td>City:
+                    <input type="text" id="city">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Phone:
+                    <input type="text" id="phone">
+                </td>
+                <td>Contact meter billing:
+                    <input type="text" id="meterBill">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Contact Name:
+                    <input type="text" id="contName">
+                </td>
+                <td>Contact e-mail address:
+                    <input type="email" id="emailAddress">
+                </td>
+            </tr>
+
+
+        </table>
+
+        <!--2-->
+
+        <table class="equipment_table">
+            <tr>
+                <th colspan="10">The Equipment</th>
+            </tr>
+            <tr>
+                <th>Plan Type (Fee)</th>
+                <th>Serial Number</th>
+                <th>Modem Type</th>
+                <th>LTE/ FIBRE</th>
+                <th>Installation Fees</th>
+                <th>Promotion (Y/N)</th>
+                <th>Notice of Cancellation</th>
+                <th>Start Reading</th>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="planType"></td>
+                <td><input type="text" id="serialNr"></td>
+                <td><input type="text" id="modemType"></td>
+                <td><input type="text" id="ltefibre"></td>
+                <td><input type="text" id="installFee"></td>
+                <td><input type="text" id="promo"></td>
+                <td>30 Days in advance</td>
+                <td><input type="text" id="startRead"></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="planType"></td>
+                <td><input type="text" id="serialNr"></td>
+                <td><input type="text" id="modemType"></td>
+                <td><input type="text" id="ltefibre"></td>
+                <td><input type="text" id="installFee"></td>
+                <td><input type="text" id="promo"></td>
+                <td>30 Days in advance</td>
+                <td><input type="text" id="startRead"></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="planType"></td>
+                <td><input type="text" id="serialNr"></td>
+                <td><input type="text" id="modemType"></td>
+                <td><input type="text" id="ltefibre"></td>
+                <td><input type="text" id="installFee"></td>
+                <td><input type="text" id="promo"></td>
+                <td>30 Days in advance</td>
+                <td><input type="text" id="startRead"></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="planType"></td>
+                <td><input type="text" id="serialNr"></td>
+                <td><input type="text" id="modemType"></td>
+                <td><input type="text" id="ltefibre"></td>
+                <td><input type="text" id="installFee"></td>
+                <td><input type="text" id="promo"></td>
+                <td>30 Days in advance</td>
+                <td><input type="text" id="startRead"></td>
+            </tr>
+
+        </table>
+
+        <table class="equipment_table2">
+            <tr>
+                <th>Type of Payment</th>
+                <th>Amount</th>
+                <th>Period</th>
+                <th>Total</th>
+
+            </tr>
+            <tr>
+                <td><input type="text" id="type_of_payment"></td>
+                <td><input type="text" id="amount"></td>
+                <td><input type="text" id="period"></td>
+                <td><input type="text" id="total"></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="type_of_payment"></td>
+                <td><input type="text" id="amount"></td>
+                <td><input type="text" id="period"></td>
+                <td><input type="text" id="total"></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="type_of_payment"></td>
+                <td><input type="text" id="amount"></td>
+                <td><input type="text" id="period"></td>
+                <td><input type="text" id="total"></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="type_of_payment"></td>
+                <td><input type="text" id="amount"></td>
+                <td><input type="text" id="period"></td>
+                <td><input type="text" id="total"></td>
+            </tr>
+        </table>
+
+
+        <!---->
+        <table class="auth_table">
+            <tr>
+                <th>Customer</th>
+                <th>Service Provider</th>
+            </tr>
+
+            <tr>
+                <td>I hereby have read the terms and conditions and am authorised on
+                    behalf of the client to proceed with this SLA. <br><br>
+                    <label for="cname" class="cname">Name:</label>
+                    <input type="text" id="cname" name="cname">
+
+                    <br><br>
+                    Signature <canvas id="signature-canvas" width="200" height="50"></canvas>
+                    <button id="clear-button">Clear</button>
+                    <br><br>
+
+                    <label for="capacity" class="capacity">Capacity:</label>
+                    <input type="text" id="capacity" name="capacity">
+                    <br><br>
+                    <label for="cdate" class="cdate">Date:</label>
+                    <input type="date" id="cdate" name="cdate">
+
+
+
+                </td>
+
+                <td>This agreement is not valid unless signed by an authorised
+                    manager of Gugu Co.
+                    <label for="manager_name" class="cname">Name:</label>
+                    <input type="text" id="manager_name" name="manager_name">
+
+                    <br><br>
+                    Signature <canvas id="signature-canvas" width="200" height="50"></canvas>
+                    <button id="clear-button">Clear</button>
+                    <br><br>
+
+                    <label for="gug_capacity" class="gug_capacity">Capacity:</label>
+                    <input type="text" id="gug_capacity" name="gug_capacity">
+                    <br><br>
+                    <label for="manager_date" class="manager_date">Date:</label>
+                    <input type="date" id="manager_date" name="manager_date">
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10">
+                    <label style="font-size: 12px;">Witness:<input type="text" id="witness" name="witness"></label>
+                    <label style="font-size: 12px; padding-left: 80px;">Signature:<input type="text"
+                            id="witness_signature" name="witness_signature"></label>
+                </td>
+            </tr>
+        </table>
+
+
+        <div class="footer">
+            <img class="logo-in2" src="logo.png" alt="Logo">
+            <div class="initial">
+                <label for="initial">Initial:</label>
+                <input type="text" id="initial">
+            </div>
+        </div>
+
+
+
+
+
+        <!--3rd Page-->
+
+
+        <div class="page">
+            <div class="authbox"></div>
+            <div class="debit_auth">
+                <h4>DEBIT ORDER AUTHORISATION</h4>
+                I / We the undersigned herby agree to or its cessionary or Agent to draw against my/ our bank
+                    account, wheresoever same may be
+                    situated, the SLA charge and any other amounts due to or its Cessionary in terms of this agreement.
+                <br><br>
+
+                <label class="auth">Bank: <input type="text" id="bankname" name="bankname"></label>
+                <label class="auth">Branch: <input type="text" id="bankbranch" name="bankbranch"></label>
+                <label class="auth">Account No: <input type="text" id="accountno" name="accountno"></label> <br> <br>
+                <label class="auth">Branch Code: <input type="text" id="branchcode" name="branchcode"></label>
+                <label class="auth">ACCOUNT Name (Print): <input type="text" id="accountname" name="accountname"></label><br><br>
+                <label class="auth">Name (Print): <input type="text" id="branchcode" name="branchcode"></label>
+
+
+            </div>
+
+            <h5>TERMS AND CONDITIONS</h5>
+            <div class="columns">
+                <ol>
+                    <li> <b>Applicability</b>
+                        <br><br>
+                        The Service provider agrees to provide a service to
+                        the Customer as set out in the terms and conditions
+                        below. This service does not include the purchase
+                        of the delivery to/from or the installation charges of
+                        the equipment, software support, optional
+                        accessories or major modifications to the
+                        equipment as listed in the service agreement
+                        schedule.</li><br>
+
+                    <li><b>Duration of the Agreement</b> <br><br>
+                        <ol>
+                            <li>This Agreement shall commence on installation of
+                                the equipment and continue for an initial period of
+                                twelve (12) months. Thereafter, the Agreement will
+                                remain in force for further 12-month period unless
+                                terminated by either party giving to the other not
+                                less than ninety (30) days written notice by
+                                registered post prior to the expiry of the initial
+                                period.</li><br>
+                            <li>In the event of the customer terminating the
+                                Agreement without notification within 30 days upon 
+                                activating the contract, during the initial period of 12 
+                                months, and at the election of the Service Provider
+                                the Customer agrees to pay the Average Service 
+                                charge that was charged for the last six months
+                                multiplied by the number of months remaining to complete the initial
+                                period to the Service Provider.</li> <br>
+                            <li>The Customer acknowledges that the payment
+                                referred to in paragraph 2.2 above shall constitute
+                                the agreed penalty which will be payable to the
+                                Service Provider in the event of termination by the
+                                customer prior to the completion of the initial period.</li>
+                        </ol>
+                    </li><br>
+                    <li><b>Obligations of the Service Provider</b><br><br>
+                        <ol>
+                            <li>The Service provider shall provide a maintenance
+                                service for the Customer Personal Equipment 
+                                (CPE) (excluding software support) in accordance
+                                with the option chosen for the equipment listed in
+                                the Service Agreement Schedule for the period of
+                                this agreement in accordance with the following
+                                provisions should it be applicable to the option
+                                chosen, at the service providers discretion, inter 
+                                alia. 
+                                <ol><br>
+                                    <li> Keep the equipment in good working order for the
+                                        duration of the Agreement by replacing without
+                                        charge parts which the Service Provider or its
+                                        authorized Agent deem to be broken or worn
+                                        through us</li><br>
+                                    <li>Not charge for any routine maintenance, repair
+                                            work or for replacement parts because of fair wear
+                                            and tear (CPE).</li>
+                                </ol>
+                            </li><br>
+
+
+                        </ol>
+                    
+                    </li>
+                </ol>
+            </div>
+
+            <div class="footer">
+                <img class="logo-in2" src="logo.png" alt="Logo">
+                <div class="initial">
+                    <label for="initial">Initial:</label>
+                    <input type="text" id="initial">
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+        <!--4th Page-->
+
+        <div class="page4">
+        <div class="columns">
+            <ol start="3.1.3">
+                <li> Provide service free of any traveling charges within
+                    a 50km radius of the Service Providers or
+                    authorised Agents service centre.</li><br><br>
+                
+                <li> Respond to service calls within eight (8) working
+                    hours for service calls within a 50km radius of a
+                    service centre or (24) working hours for service
+                    calls beyond the 50km radius, from the time the call
+                    is placed with the Service Providers help desk
+                    subject to clause 5.6.</li>
+            </ol>
+        </div>
+              
+              
+        </div>
+
+
+
+
+
+
+</body>
+
+</html>

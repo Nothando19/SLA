@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!--1st page-->
+    <div class="pagee">
+        <div class="header">
+            <img class="logo" src="logo.png" alt="Logo">
+            <div class="gugu_address">
+                Gugu Corporation (Pty)Ltd <br>
+                3 Millar Road, <br>
+                3rd floor <br>
+                Windermere, Berea <br>
+                Durban 4000<br>
+            </div>
+        </div>
+        <div class="agreement">
+            <h1>Service Level Agreement</h1>
+            <div class="box">
+                <p>
+                    BETWEEN <br><br> <b> Gugu Corporation (PTY) LTD</b><br>
+                    Reg No: 2019/106448/07 <br>
+                    (hereinafter referred to as the “Service Provider”) <br>
+                </p>
+                <p>
+                    And<br><br>
+                    <label for="client-name"> Client Name: </label>
+                    <input type="text" id="client-name" name="client-name"><br>
+
+                    <label for="client-id"> ID / Reg No.: </label>
+                    <input type="text" id="client-id" name="client-id">
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <img class="logo-in" src="logo.png" alt="Logo">
+            <div class="initial">
+                <label for="initial">Initial:</label>
+                <input type="text" id="initial">
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!--2nd Page-->
+
+    <div class="pagee">
+        <h3>Service Agreement Schedule</h3>
+        <label for="date" class="date">Date:</label>
+        <input type="date" id="date" name="date">
+
+        <label for="in-date" class="in-date">Installation Date:</label>
+        <input type="date" id="in-date" name="in-date"><br>
+
+        <label for="client" class="client">Client:</label>
+        <input type="client" id="client" name="client"> <br>
+
+        <label class="exist"><input type="checkbox" name="exist_contract" value="Existing Contract"> Existing Contract
+        </label>
+        <label class="new"><input type="checkbox" name="new_contract" value="New Contract"> New Contract
+        </label><br><br>
+
+
+        <table class="adresses_table">
+            <tr>
+                <th>Physical Address of Installation</th>
+                <th>Postal Address</th>
+            </tr>
+
+            <tr>
+                <td>Address:
+                    <input type="text" id="address">
+                </td>
+                <td>Address:
+                    <input type="text" id="address">
+                </td>
+            </tr>
+
+            <tr>
+                <td> <input type="text" id="address"></td>
+                <td> <input type="text" id="address"></td>
+            </tr>
+
+            <tr>
+                <td>City:
+                    <input type="text" id="city">
+                </td>
+                <td>City:
+                    <input type="text" id="city">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Phone:
+                    <input type="text" id="phone">
+                </td>
+                <td>Contact meter billing:
+                    <input type="text" id="meterBill">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Contact Name:
+                    <input type="text" id="contName">
+                </td>
+                <td>Contact e-mail address:
+                    <input type="email" id="emailAddress">
+                </td>
+            </tr>
+
+
+        </table>
+
+        <!--2-->
+
+        <table class="equipment_table">
+            <tr>
+                <th colspan="10">The Equipment</th>
+            </tr>
+            <tr>
+                <th>Plan Type (Fee)</th>
+                <th>Serial Number</th>
+                <th>Modem Type</th>
+                <th>LTE/ FIBRE</th>
+                <th>Installation Fees</th>
+                <th>Promotion (Y/N)</th>
+                <th>Notice of Cancellation</th>
+                <th>Start Reading</th>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="planType"></td>
+                <td><input type="text" id="serialNr"></td>
+                <td><input type="text" id="modemType"></td>
+                <td><input type="text" id="ltefibre"></td>
+                <td><input type="text" id="installFee"></td>
+                <td><input type="text" id="promo"></td>
+                <td>30 Days in advance</td>
+                <td><input type="text" id="startRead"></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="planType"></td>
+                <td><input type="text" id="serialNr"></td>
+                <td><input type="text" id="modemType"></td>
+                <td><input type="text" id="ltefibre"></td>
+                <td><input type="text" id="installFee"></td>
+                <td><input type="text" id="promo"></td>
+                <td>30 Days in advance</td>
+                <td><input type="text" id="startRead"></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="planType"></td>
+                <td><input type="text" id="serialNr"></td>
+                <td><input type="text" id="modemType"></td>
+                <td><input type="text" id="ltefibre"></td>
+                <td><input type="text" id="installFee"></td>
+                <td><input type="text" id="promo"></td>
+                <td>30 Days in advance</td>
+                <td><input type="text" id="startRead"></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="planType"></td>
+                <td><input type="text" id="serialNr"></td>
+                <td><input type="text" id="modemType"></td>
+                <td><input type="text" id="ltefibre"></td>
+                <td><input type="text" id="installFee"></td>
+                <td><input type="text" id="promo"></td>
+                <td>30 Days in advance</td>
+                <td><input type="text" id="startRead"></td>
+            </tr>
+
+        </table>
+
+        <table class="equipment_table2">
+            <tr>
+                <th>Type of Payment</th>
+                <th>Amount</th>
+                <th>Period</th>
+                <th>Total</th>
+
+            </tr>
+            <tr>
+                <td><input type="text" id="type_of_payment"></td>
+                <td><input type="text" id="amount"></td>
+                <td><input type="text" id="period"></td>
+                <td><input type="text" id="total"></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="type_of_payment"></td>
+                <td><input type="text" id="amount"></td>
+                <td><input type="text" id="period"></td>
+                <td><input type="text" id="total"></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="type_of_payment"></td>
+                <td><input type="text" id="amount"></td>
+                <td><input type="text" id="period"></td>
+                <td><input type="text" id="total"></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="type_of_payment"></td>
+                <td><input type="text" id="amount"></td>
+                <td><input type="text" id="period"></td>
+                <td><input type="text" id="total"></td>
+            </tr>
+        </table>
+
+
+        <!---->
+        <table class="auth_table">
+            <tr>
+                <th>Customer</th>
+                <th>Service Provider</th>
+            </tr>
+
+            <tr>
+                <td>I hereby have read the terms and conditions and am authorised on
+                    behalf of the client to proceed with this SLA. <br><br>
+                    <label for="cname" class="cname">Name:</label>
+                    <input type="text" id="cname" name="cname">
+
+                    <br><br>
+                    Signature <canvas id="signature-canvas" width="200" height="50"></canvas>
+                    <button id="clear-button">Clear</button>
+                    <br><br>
+
+                    <label for="capacity" class="capacity">Capacity:</label>
+                    <input type="text" id="capacity" name="capacity">
+                    <br><br>
+                    <label for="cdate" class="cdate">Date:</label>
+                    <input type="date" id="cdate" name="cdate">
+
+
+
+                </td>
+
+                <td>This agreement is not valid unless signed by an authorised
+                    manager of Gugu Co.
+                    <label for="manager_name" class="cname">Name:</label>
+                    <input type="text" id="manager_name" name="manager_name">
+
+                    <br><br>
+                    Signature <canvas id="signature-canvas" width="200" height="50"></canvas>
+                    <button id="clear-button">Clear</button>
+                    <br><br>
+
+                    <label for="gug_capacity" class="gug_capacity">Capacity:</label>
+                    <input type="text" id="gug_capacity" name="gug_capacity">
+                    <br><br>
+                    <label for="manager_date" class="manager_date">Date:</label>
+                    <input type="date" id="manager_date" name="manager_date">
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10">
+                    <label style="font-size: 12px;">Witness:<input type="text" id="witness" name="witness"></label>
+                    <label style="font-size: 12px; padding-left: 80px;">Signature:<input type="text"
+                            id="witness_signature" name="witness_signature"></label>
+                </td>
+            </tr>
+        </table>
+
+
+        <div class="footer">
+            <img class="logo-in2" src="logo.png" alt="Logo">
+            <div class="initial">
+                <label for="initial">Initial:</label>
+                <input type="text" id="initial">
+            </div>
+        </div>
+
+
+
+
+
+        <!--3rd Page-->
+
+
+        <div class="page">
+            <div class="authbox"></div>
+            <div class="debit_auth">
+                <h4>DEBIT ORDER AUTHORISATION</h4>
+                I / We the undersigned herby agree to or its cessionary or Agent to draw against my/ our bank
+                account, wheresoever same may be
+                situated, the SLA charge and any other amounts due to or its Cessionary in terms of this agreement.
+                <br><br>
+
+                <label class="auth">Bank: <input type="text" id="bankname" name="bankname"></label>
+                <label class="auth">Branch: <input type="text" id="bankbranch" name="bankbranch"></label>
+                <label class="auth">Account No: <input type="text" id="accountno" name="accountno"></label> <br> <br>
+                <label class="auth">Branch Code: <input type="text" id="branchcode" name="branchcode"></label>
+                <label class="auth">ACCOUNT Name (Print): <input type="text" id="accountname"
+                        name="accountname"></label><br><br>
+                <label class="auth">Name (Print): <input type="text" id="branchcode" name="branchcode"></label>
+
+
+            </div>
+
+            <h5>TERMS AND CONDITIONS</h5>
+            <div class="columns">
+                <ol class="start">
+                    <li> <span class="list-heading">Applicability</span>
+                        
+                        <p class="list-content">
+                        The Service provider agrees to provide a service to
+                        the Customer as set out in the terms and conditions
+                        below. This service does not include the purchase
+                        of the delivery to/from or the installation charges of
+                        the equipment, software support, optional
+                        accessories or major modifications to the
+                        equipment as listed in the service agreement
+                        schedule.
+                        </p> 
+                    </li>
+
+                    <li><span class="list-heading">Duration of the Agreement</span> 
+                        <ol class="sub-list">
+                            <li>
+                                <p class="list-content">
+                                    This Agreement shall commence on installation of
+                                    the equipment and continue for an initial period of
+                                    twelve (12) months. Thereafter, the Agreement will
+                                    remain in force for further 12-month period unless
+                                    terminated by either party giving to the other not
+                                    less than ninety (30) days written notice by
+                                    registered post prior to the expiry of the initial
+                                    period.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="list-content">
+                                    In the event of the customer terminating the
+                                    Agreement without notification within 30 days upon
+                                    activating the contract, during the initial period of 12
+                                    months, and at the election of the Service Provider
+                                    the Customer agrees to pay the Average Service
+                                    charge that was charged for the last six months
+                                    multiplied by the number of months remaining to complete the initial
+                                    period to the Service Provider.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="list-content">
+                                    The Customer acknowledges that the payment
+                                    referred to in paragraph 2.2 above shall constitute
+                                    the agreed penalty which will be payable to the
+                                    Service Provider in the event of termination by the
+                                    customer prior to the completion of the initial period.
+                                </p>
+                                
+                            </li>
+                        </ol>
+                    </li>
+                    <li><span class="list-heading">Obligations of the Service Provider</span>
+                        <ol class="sub-list">
+                            <li>
+                                <p class="list-content">
+                                    The Service provider shall provide a maintenance
+                                    service for the Customer Personal Equipment
+                                    (CPE) (excluding software support) in accordance
+                                    with the option chosen for the equipment listed in
+                                    the Service Agreement Schedule for the period of
+                                    this agreement in accordance with the following
+                                    provisions should it be applicable to the option
+                                    chosen, at the service providers discretion, inter
+                                    alia.
+                                </p>
+                                
+                                <ol class="sub-list">
+                                    <li>
+                                        <p class="list-content">
+                                            Keep the equipment in good working order for the
+                                            duration of the Agreement by replacing without
+                                            charge parts which the Service Provider or its
+                                            authorized Agent deem to be broken or worn
+                                            through us
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="list-content">
+                                            Not charge for any routine maintenance, repair
+                                            work or for replacement parts because of fair wear
+                                            and tear (CPE).
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+
+
+                        </ol>
+
+                    </li>
+                </ol>
+            </div>
+
+            <div class="footer">
+                <img class="logo-in2" src="logo.png" alt="Logo">
+                <div class="initial">
+                    <label for="initial">Initial:</label>
+                    <input type="text" id="initial">
+                </div>
+            </div>
+        </div>
+
+
+        <!--4th Page-->
+
+        <div class="page4">
+            <div class="columns">
+                <ol class="continue">
+                    <li> 
+                        <p class="list-content">
+                            Provide service free of any traveling charges within
+                            a 50km radius of the Service Providers or
+                            authorised Agents service centre.
+                        </p>
+                    </li>
+
+                    <li> 
+                        <p class="list-content">
+                            Respond to service calls within eight (8) working
+                            hours for service calls within a 50km radius of a
+                            service centre or (24) working hours for service
+                            calls beyond the 50km radius, from the time the call
+                            is placed with the Service Providers help desk
+                            subject to clause 5.6.
+                        </p>
+                    </li>
+
+
+                    <li>
+                        <p class="list-content">
+                            Provide a maintenance service for a period of
+                            twelve (12) months in respect of CPE's installed as
+                            part of the equipment listed on the service
+                            agreement schedule
+                        </p>
+                    </li> 
+
+                    <li><span class="list-heading">Obligations of the Customer</span>
+                        <ol class="sub-list">
+                            <li>
+                                <p class="list-content">
+                                    Provide to the Service Provider true and accurate
+                                    meter uGES (Gugu Energy System) or CPE or
+                                    credit due readings before the last day of every
+                                    month or when requested to do so by the Service
+                                    Provider for the purpose of maintenance and billing.
+                                    After at least three (3) monthly service readings, the
+                                    Service Provider may elect to invoice the Customer
+                                    on actual meter readings every third month with the
+                                    intervening months charges being based on
+                                    minimum billing if any, or the average meter
+                                    volumes of the preceding months. The next
+                                    sequential billing will be adjusted for actual excess
+                                    billing for the previous and current billing period.
+                                    The Service Provider reserves the right to check the
+                                    readings from time to time.
+                                </p>
+                              </li>
+
+                            <li>
+                                <p class="list-content">
+                                    Pay to the Service Provider the total monthly
+                                    minimum charge if any, and the additional meter or
+                                    credit due charges if any, calculated at the rate
+                                    specified in the service agreement schedule,
+                                    monthly in arrears upon presentation of invoice.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class="list-content">
+                                    To pay invoices within 30 days of date of statement.
+                                </p>
+                            </li>
+
+                            <li>
+                                To immediately cease using the equipment (CPE)
+                                or uGES and to notify the Service Provider should
+                                there be any loss, or damage to, the equipment or
+                                part thereof.</li><br>
+
+                            <li>To only use equipment in a safe and responsible
+                                manner and operate in accordance with the SLA. </li><br>
+
+                            <li>To not exceed the recommended standards as
+                                specified by the Service Provider.</li><br>
+
+                            <li>To pay to the Service Provider the monthly fee as
+                                stipulated.</li><br>
+
+                            <li>To pay the Service Providers prevailing rates where
+                                the customer is obliged to pay for any work,
+                                traveling or replacement parts not covered by the
+                                Service Agreement.</li><br>
+
+                            <li>To use the equipment with care and to take
+                                reasonable precautions to avoid loss or damage
+                                and excessive wear and tear.</li><br>
+
+                            <li>To not repair the equipment nor have it repaired by
+                                any other party other than the Service Provider or
+                                their authorized Gugu Agent.</li><br>
+
+                            <li>Not to use any part or component for the
+                                equipment, including uGES, Gugu LTE, Gugu Fibre
+                                if applicable that has notbeen supplied or approved
+                                by the Service Provider.</li><br>
+
+                            <li>Allow the Service provider or their authorized
+                                representative to inspect the equipment and Gugu
+                                device at all reasonable times.</li><br>
+
+                            <li>To use the equipment only for which it has been
+                                designed and in accordance with the Service
+                                Providers instructions.</li><br>
+
+                            <li>To identify a person to be trained by the Service
+                                Provider as the key operator of the equipment.</li><br>
+
+                            <li>To identify a suitable area for placement of the
+                                equipment and approved by the Service Provider.
+                                Once installed the equipment cannot be moved
+                                without the approval of the Service Provider.</li><br>
+
+                            <li>To contact the Service Provider should the
+                                equipment need to be moved to a new location. The
+                                Service Provider may bill the Customer the cost of
+                                moving the equipment. Should the customer not
+                                use the Service Provider the Customer will be liable
+                                for the cost of any repairs or damages caused by
+                                the moving of the equipment.</li><br>
+
+                            <li>To allow the Service Provider to inspect all
+                                equipment to be covered under this agreement to
+                                determine if it is in good mechanical condition on
+                                the effective date of the Agreement. Should the
+                                equipment require repair for acceptance, such
+                                repairs if accepted by the Customer will be done at
+                                the Service Providers then current rate for labour
+                                and parts.</li><br>
+
+                            <li>To pay the service provider the increased costs or
+                                the costs incurred in respect of paragraphs 5.1-5.9.</li><br>
+                            <li><b>Variation in costs charged</b> <br><br>
+                                <ol>
+                                    <li>The Service provider reserves the right to increase
+                                        product/service charge/fees on an annual basis on
+                                        the anniversary of the date of installation by up to
+                                        an amount of 6% of the existing product/service
+                                        charge/fees.</li><br>
+                                    <li>Where the maximum rated billing is exceeded in
+                                        any month / quarter as set out in the service
+                                        agreement schedule the Service Provider reserves
+                                        the right to bill the excess volume at 100% of the
+                                        meter billing rate.
+                                    </li>
+                                </ol>
+
+                            </li><br>
+
+                        </ol>
+
+
+                    </li>
+
+
+                </ol>
+            </div>
+
+            <div class="footer">
+                <img class="logo-in3" src="logo.png" alt="Logo">
+                <div class="initial3">
+                    <label for="initial">Initial:</label>
+                    <input type="text" id="initial">
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="page4">
+            <div class="columns">
+                <ol>
+                    <li> The Service Provider reserves the right to amend
+                        the fuel portion (11.5%) of the Service Charge
+                        should the price of fuel increase by more than 15%
+                        over a quarter. The increase will be in proportion to
+                        the percentage increase in the price of fuel.</li><br>
+
+                    <li>The Service Provider reserves the right to amend
+                        the Service Charge for products (CPE's) inclusive
+                        agreements without notice if toner prices increase
+                        for whatever reason.</li><br>
+
+                    <li>The transfer of equipment to a different service area
+                        subjects the equipment to the rate applicable to that
+                        service area.</li><br>
+
+                    <li>For service calls outside of the 50km radius, a
+                        traveling charge per kilometer as then currently
+                        charged by the AA (Automobile Association of
+                        South Africa) or its successors in title will be
+                        charged and failing that the Service Providers then
+                        prevailing rates will be charged.</li><br>
+
+                    <li> The Service Provider may levy a charge at its then
+                        current prevailing rates if a repair is a result of
+                        misuse and negligence in operation, unauthorized
+                        repairs or adjustments made by any other person
+                        other than the Service Provider or its authorized
+                        Agent, damage caused by riots, fire, floods or an
+                        act of God or carelessness in the handling of the
+                        equipment.</li><br>
+
+                    <li>The cost of repair and replacement of the Digital
+                        controller or CPE's will be for the customer's
+                        account after a period of twelve months from date
+                        of signature of this agreement by the customer.</li><br>
+
+                    <li>Both parties agree that the Service provider shall be
+                        entitled to charge for service provided at the
+                        Customers request should the work have to be
+                        done outside of the Service Providers normal
+                        working hours</li><br>
+
+                    <li>A minimum service administration fee of R100.00
+                        (One hundred Rand) will come into effect as soon
+                        as the monthly billing is below R100.00 per device.</li><br>
+
+                    <li><b>Limitation of liability</b>
+                        <ol>
+                            <li>The Service Provider shall not be liable for any loss
+                                or delay in performance by the Customer due in
+                                whole or in part to any cause beyond the Service
+                                Providers control.</li><br>
+
+                            <li>This Agreement is applicable to the services area's
+                                in which the Service provider operates. If the
+                                equipment is moved outside of the service area, the
+                                Customer agrees that the Agreement shall be
+                                deemed terminated by the customer.</li><br>
+
+                            <li>The Service Provider will not be liable for any
+                                indirect, special, or consequential damages arising
+                                out of this Agreement or the use of any equipment
+                                and services provided under this Agreement.</li><br>
+
+                            <li>The Network Provider radio's licensed or
+                                unlicensed spectrum or wireless communication
+                                apparatus and equipment are excluded from the
+                                Service Agreement. All third-party network services
+                                are not included in this SLA. </li><br>
+
+                            <li>Where a shop reconditioning is necessary or the
+                                manufacturers life expectancy of the equipment has
+                                been exceeded, and normal repairs and
+                                replacement parts cannot keep the equipment in
+                                satisfactory condition the Service Provider will
+                                submit a cost estimate of needed repairs which will
+                                be in addition to the Service charges. If the
+                                Customer does not authorize such repair, the
+                                Service Provider may attend to cancel this
+                                agreement and furnish service on a per call basis.</li><br>
+
+                            <li>Where the equipment installed is a refurbished or
+                                second hand machine, the on-going supply of spare
+                                parts and consumables is dependent on them being
+                                available from our suppliers.</li><br>
+
+                            <li><b> Breach</b> <br>
+                                <ol>
+                                    <li>Should the customer breach any term of this
+                                        agreement the Service provider may immediately;
+                                        <br>
+                                        <ol>
+                                            <li>Be entitled to charge interest on all overdue
+                                                accounts at the rate of 15.5% per annum as
+                                                allowed by the Prescribed Rate of Interest Act and;</li> <br>
+
+                                            <li>Cease providing any services in terms of this
+                                                agreement and recover any CPE or parts supplied
+                                                under this agreement and;</li><br>
+                                            <li>Cancel this agreement and;</li><br>
+                                            <li>Claim any outstanding amounts due in terms of this
+                                                agreement as well as the agreed penalty as set out
+                                                in clauses 2.2 and 2.3.</li><br>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+
+                            <li>The parties agree that the Service provider may
+                                also cancel this agreement if;
+                                <br>
+                                <ol>
+                                    <li>The customer, commits any act of insolvency, is
+                                        sequestrated provisionally or finally, or enters
+                                        judicial management or liquidation.</li> <br>
+
+                                    <li>Is not using the equipment in accordance with its
+                                        intended purpose</li> <br>
+                                    <li>Where a shop reconditioning is necessary, or the
+                                        manufacturer's life expectancy of the equipment
+                                        has been exceeded.</li> <br>
+                                </ol>
+
+                            </li> <br>
+                            <li>Further should the Customer be in breach of this
+                                agreement and the Service Provider institutes legal
+                                proceedings the Customer agrees to pay all costs
+                                of such legal action on attorney and own client
+                                scale.
+                            </li>
+                        </ol>
+                    </li><br>
+                </ol>
+            </div>
+
+            <div class="footer">
+                <img class="logo-in3" src="logo.png" alt="Logo">
+                <div class="initial3">
+                    <label for="initial">Initial:</label>
+                    <input type="text" id="initial">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!--LAST Page-->
+
+
+        <div class="page4">
+            <div class="columns">
+                <ol>
+                    <li><b>Domicilia and notices</b><br><br>
+                        <ol>
+                            <li>The parties choose as their <i>domicilium citandi et
+                                    exexutandi</i> the addresses as set out hereunder,
+                                provided that such <i>domicilium</i> of either party may
+                                be changed by written notice from such party to the
+                                other party with effect from the date of receipt or
+                                deemed receipt by the latter of such notice.<br><br>
+
+                                <ol>
+                                    <li>The Service provider:</li><br>
+
+                                    Address:<input type="text" id="provider_address">
+                                    <input type="text" id="provider_address">
+                                    <input type="text" id="provider_address"> <br>
+
+                                    Email:<input type="email" id="provider_email"> <br>
+
+                                    Fax:<input type="text" id="provider_fax"> <br><br>
+
+                                    <li>The Customer:</li><br>
+
+                                    Address: The address as set out in the service
+                                    agreement schedule<br>
+                                    Email : The address as set out in the service
+                                    agreement schedule <br>
+                                    Fax : The address as set out in the service
+                                    agreement schedule <br><br>
+
+                                </ol>
+                            </li>
+                            <li>Any notice given in terms of this Agreement shall be in
+                                writing and shall - <br>
+                                <ol>
+                                    <li>If sent by prepaid registered post to latter's <i>domicilium</i>
+                                        shall be deemed to be received by the other party on the
+                                        second business day following the date of posting
+                                        thereof</li> <br>
+
+                                    <li>if delivered by hand be deemed to have been duly
+                                        received by the addressee on the date of delivery;</li> <br>
+
+                                    <li>if transmitted by telex or facsimile or email be deemed to
+                                        have been received by the addressee 1 (one) Business
+                                        Day after dispatch.</li><br>
+                                </ol>
+                            </li>
+                            <li>Notwithstanding anything to the contrary contained in
+                                this Agreement, a written notice or communication
+                                received by one of the Parties from another including by
+                                way of telex or facsimile transmission or email shall be
+                                adequate written notice or communicationto such Party</li><br>
+                        </ol>
+
+                    </li>
+                    <li><b>Jurisdiction</b><br><br>
+                        The parties agree that in terms of section 45 of the
+                        Magistrates' Court Act (No.32 of 1944 as amended)
+                        to the Jurisdiction of the Magistrates' Court having
+                        Jurisdiction over both parties for the determination
+                        of a legal action which monetary value otherwise
+                        exceeds the Jurisdiction of the Magistrates' Court
+                    </li><br>
+
+                    <li><b>General</b><br>
+                        <ol>
+                            <li>This agreement represents the entire agreement
+                                between the Service Provider and the Customer
+                                and supersedes all other written or oral
+                                agreements, proposals or communication and
+                                cannot be altered or amended unless agreed in
+                                writing by both parties.</li><br>
+
+                            <li>By signing this Agreement, the signatory confirms
+                                that they have the authority (ex-officio or by board
+                                resolution) to sign, endorse and execute all
+                                documents for and on behalf of the customer.</li><br>
+
+                            <li>The Customer shall not be entitled to cede or
+                                transfer any of its rights under this agreement
+                                without the Service Providers prior written consent,
+                                which shall not be unreasonably withheld.</li><br>
+
+                            <li>This Agreement shall be governed and construed in
+                                accordance with the Laws of the Republic of South
+                                Africa.</li><br>
+
+                            <li>Toner on toner inclusive Agreements will only be
+                                provided where the Customer's account is up to
+                                date.</li><br>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+
+
+
+
+
+</body>
+
+</html>

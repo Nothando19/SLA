@@ -71,7 +71,10 @@ p {
   height: 80px;
   margin-left: 20px;
 }
-
+.logo-in3 {
+  height: 60px;
+  margin-left: 20px;
+}
 .gugu_address {
   margin-right: 20px;
   margin-top: 100px;
@@ -110,6 +113,13 @@ input {
   margin-right: 80px;
   margin-top: -50px;
   text-align: right;
+  font-size: 11px;
+}
+
+.initial3{
+  text-align: right;
+  margin-top: -40px;
+  margin-right: 80px;
   font-size: 11px;
 }
 
@@ -272,15 +282,48 @@ h5{
 }
 .columns {
   column-count: 2;
-  padding: 40px 40px;
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 40px;
   
 }
-ol { 
+
+.list-heading {
+  margin: 32px;
+  font-weight: 700;
+}
+
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.2;
+  margin: 10px 34px;
+}
+/* li{ display: block; } */
+
+.sub-list {
+  padding-left: 0;
+}
+ol{ 
   counter-reset: item;
   font-size: 13px;
 }
-li{ display: block; }
-li:before { 
-  content: counters(item, ".") ". "; 
+
+ol.start li, ol.continue li{
+  position: relative;
+  list-style: none;
+}
+
+ol.start li::before, ol.continue li::before{
+  position: absolute;
+  content: counters(item, ".") "."; 
   counter-increment: item;
 }
+ol.continue{
+  counter-reset: item 3;
+}
+/* .continuous-list li::before {  
+  content: counter(listCounter) ". ";  
+  counter-increment: listCounter;
+} */

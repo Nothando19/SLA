@@ -321,7 +321,10 @@ ol.start li::before, ol.continue li::before{
   counter-increment: item;
 }
 ol.continue{
-  counter-reset: item 3;
+  counter-reset: items;
+}
+ol.continue li::before{
+  counter-increment: items;
 }
 /* .continuous-list li::before {  
   content: counter(listCounter) ". ";  

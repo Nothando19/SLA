@@ -42,7 +42,10 @@ p {
 
 .box {
   border: 1px solid black;
+  text-align: center;
   margin: 70px 40px;
+  padding: 40px;
+  line-height: 1.5;
 }
 
 .header {
@@ -312,7 +315,7 @@ ol{
 
 ol.start li, ol.continue li{
   position: relative;
-  list-style: none;
+  list-style-type: none;
 }
 
 ol.start li::before, ol.continue li::before{
@@ -321,10 +324,8 @@ ol.start li::before, ol.continue li::before{
   counter-increment: item;
 }
 ol.continue{
-  counter-reset: items;
-}
-ol.continue li::before{
-  counter-increment: items;
+  counter-reset: item;
+  content: counter(item, decimal); 
 }
 /* .continuous-list li::before {  
   content: counter(listCounter) ". ";  

@@ -1,45 +1,74 @@
-const canvas = document.getElementById('signature-canvas');
-const context = canvas.getContext('2d');
-const clearButton = document.getElementById('clear-button');
+var clientSignaturePad = document.getElementById("sign-client-pad");
 
-let isDrawing = false;
-let x = 0;
-let y = 0;
-
-function draw(event) {
-  if (!isDrawing) return;
-
-  context.beginPath();
-  context.moveTo(x, y);
-  x = event.clientX || event.touches[0].clientX;
-  y = event.clientY || event.touches[0].clientY;
-  context.lineTo(x, y);
-  context.stroke();
+function validateSignaturePad() {
+    if (this.isEmpty()) {
+      alert("Please sign the document before submitting it.");
+      return false;
+    }
+  
+    if (!this.validate()) {
+      alert("The signature is not valid. Please try again.");
+      return false;
+    }
+  
+    return true;
 }
 
-canvas.addEventListener('mousedown', function (event) {
-  isDrawing = true;
-  x = event.clientX;
-  y = event.clientY;
-});
+function main(){
+    clientSignaturePad.addEventListener("focusout", validateSignaturePad);
+} 
+main();
 
-canvas.addEventListener('mousemove', draw);
-canvas.addEventListener('mouseup', function () {
-  isDrawing = false;
-});
+const canvas = document.querySelector('canvas');
+const clearButton = document.querySelector('.clear-button');
 
-canvas.addEventListener('touchstart', function (event) {
-  isDrawing = true;
-  x = event.touches[0].clientX;
-  y = event.touches[0].clientY;
-});
+const ctx = canvas.getContext('2d');
 
-canvas.addEventListener('touchmove', draw);
-canvas.addEventListener('touchend', function () {
-  isDrawing = false;
-});
+let writingMode = false;
 
-clearButton.addEventListener('click', function () {
-  context.clearRect(0, 0, canvas.width, canvas.height);
-});
 
+const handlePointerDown = (event) => {
+    writingMode = true;
+    ctx.beginPath();
+    const [positionX, positionY] = getCursorPosition(event);
+    ctx.moveTo(positionX, positionY);
+}
+
+const handlePointerUp = () => {
+    writingMode = false;
+}
+
+const handlePointerMove = (event) => {
+    if (!writingMode) return
+    const [positionX, positionY] = getCursorPosition(event);
+    ctx.lineTo(positionX, positionY);
+    ctx.stroke();
+}
+
+const getCursorPosition = (event) => {
+    positionX = event.clientX - event.target.getBoundingClientRect().x;
+    positionY = event.clientY - event.target.getBoundingClientRect().y;
+    return [positionX, positionY];
+}
+
+
+canvas.addEventListener('pointerdown', handlePointerDown, {passive: true});
+canvas.addEventListener('pointerup', handlePointerUp, {passive: true});
+canvas.addEventListener('pointermove', handlePointerMove, {passive: true});
+
+
+
+ctx.lineWidth = 2;
+ctx.lineJoin = ctx.lineCap = 'round';
+
+
+
+const clearPad = () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+clearButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    clearPad();
+})
+ 

@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 
 <body>
@@ -11,13 +11,18 @@
     <!--1st page-->
     <div class="pagee">
         <div class="header">
-            <img class="logo" src="logo.png" alt="Logo">
+            <img class="logo" src="logo.png" alt="Logo"><br><br>
+            <div class="stay">Stay Connected.</div>
             <div class="gugu_address">
                 Gugu Corporation (Pty)Ltd <br>
                 3 Millar Road, <br>
                 3rd floor <br>
                 Windermere, Berea <br>
-                Durban 4000<br>
+                Durban 4000<br><br>
+                (+27) 87 8217 530<br>
+                <a href="mailto:support@hellogugu.com">support@hellogugu.com</a><br>
+                <a href="mailto:hello@hellogugu.com">hello@hellogugu.com</a><br>
+                <a href="https://www.hellogugu.com" target="_blank">www.hellogugu.com</a>
             </div>
         </div>
         <div class="agreement">
@@ -26,7 +31,7 @@
                 <span>
                     BETWEEN <br><br> <b> Gugu Corporation (PTY) LTD</b><br>
                     Reg No: 2019/106448/07 <br>
-                    (hereinafter referred to as the “Service Provider”) <br>
+                    (hereinafter referred to as the “Service Provider”) <br><br>
                 </span>
                 <span>
                     AND<br><br>
@@ -104,6 +109,7 @@
             <tr>
                 <td>Phone:
                     <input type="text" id="phone">
+                    
                 </td>
                 <td>Contact meter billing:
                     <input type="text" id="meterBill">
@@ -236,9 +242,14 @@
                     <label for="cname" class="cname">Name:</label>
                     <input type="text" id="cname" name="cname">
 
-                    <br><br>
-                    Signature <canvas id="signature-canvas" width="200" height="50"></canvas>
-                    <button id="clear-button">Clear</button>
+                    <div class="signature" id="sign-client">
+                        <label class="sign-label">Signature</label>
+                        <div class="signature-field">
+                            <canvas class="signature-pad" id="sign-client-pad"></canvas>
+                            <a href="#" class="clear-button">Clear</a>
+                        </div>
+                    </div>
+                   
                     <br><br>
 
                     <label for="capacity" class="capacity">Capacity:</label>
@@ -257,8 +268,6 @@
                     <input type="text" id="manager_name" name="manager_name">
 
                     <br><br>
-                    Signature <canvas id="signature-canvas" width="200" height="50"></canvas>
-                    <button id="clear-button">Clear</button>
                     <br><br>
 
                     <label for="gug_capacity" class="gug_capacity">Capacity:</label>
@@ -1034,7 +1043,7 @@
             </div>
         </div>
 
-
+        <script src="script.js"></script>
 
 
 
